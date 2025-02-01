@@ -98,8 +98,7 @@
     "yaml": "^2.6.1"
   },
   "scripts": {
-    "build": "tailwindcss -i ./src/style.css -o ./dist/style.css",
-    "deploy": "gh-pages -d dist"
+    "build": "tailwindcss -i ./src/style.css -o ./dist/style.css"
   },
   "keywords": [],
   "author": "",
