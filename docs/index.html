@@ -22,7 +22,7 @@
     <header class="w-auto mx-auto flex items-center sm:gap-[430px] sm:py-8 gap-[144px] my-8 ">
       <img src="./images/logo-bookmark.svg" alt="Logo Site">
       <img src="./images/icon-hamburger.svg" alt="Logo Menu" class="menu sm:hidden flex">
-      <nav class="sm:flex-row sm:flex xs:hidden xxs:hidden xxxs:hidden">
+      <nav class="sm:flex-row sm:flex xs:hidden xxs:hidden xxxs:hidden" aria-label="Main Navigation">
         <ul class="xs:hidden xxs:hidden xxxs:hidden sm:flex sm:items-center sm:flex-row sm:gap-10 sm:uppercase sm:text-sm sm:tracking-widest sm:leading-17">
           <li class="hover:text-red-500 transition-colors duration-200">
             <a href="#">
@@ -39,12 +39,10 @@
               Contact
             </a>
           </li>
-          <button class="bg-red-500 uppercase rounded-md text-white flex items-center justify-center font-rubik lg:min-w-28 sm:min-w-28 sm:px-5 md:min-w-36 md:py-3 drop-shadow-custom 
+          <a href="#" class="bg-red-500 uppercase rounded-md text-white flex items-center justify-center font-rubik lg:min-w-28 sm:min-w-28 sm:px-5 md:min-w-36 md:py-3 drop-shadow-custom 
             hover:bg-white transition-colors duration-200 hover:border-red-500 hover:border-2 hover:text-red-500">
-            <a href="#">
               Login
-            </a>
-          </button>
+          </a>
         </ul>
       </nav>
 
@@ -77,33 +75,31 @@
          alt="Icon Close" 
          class="close sm:hidden hidden absolute top-9 xxxs:left-[93%] xxs:left-[87%] xs:left-[82.5%] z-50">    
 
-      <nav class="navbar container sm:hidden hidden flex-col absolute top-[100px] left-auto w-[309px] h-[271px] mx-auto z-50 tracking-widest">
+      <nav class="navbar container sm:hidden hidden flex-col absolute top-[100px] left-auto w-[309px] h-[271px] mx-auto z-50 tracking-widest" aria-label="Mobile Navigation">
         <ul class="flex flex-col items-center gap-1.15 uppercase text-xl text-white">
-          <div class="w-[309px] h-[1px] bg-white bg-opacity-15"></div>
+          <li class="w-[309px] h-[1px] bg-white bg-opacity-15"></li>
           <li>
             <a href="#">
               Features
             </a>
           </li>
-          <div class="w-[309px] h-[1px] bg-white bg-opacity-15"></div>
+          <li class="w-[309px] h-[1px] bg-white bg-opacity-15"></li>
           <li>
             <a href="#">
               Pricing
             </a>
           </li>
-          <div class="w-[309px] h-[1px] bg-white bg-opacity-15"></div>
+          <li class="w-[309px] h-[1px] bg-white bg-opacity-15"></li>
           <li>
             <a href="#">
               Contact
             </a>
           </li>
-          <div class="w-[309px] h-[1px] bg-white bg-opacity-15"></div>
+          <li class="w-[309px] h-[1px] bg-white bg-opacity-15"></li>
         </ul>
-        <button class="mt-6 py-2 px-24 text-xl tracking-widest text-white rounded-md uppercase flex items-center justify-center font-rubik border-2 w-[308px] h-[48px]">
-          <a href="#">
+        <a href="#" class="mt-6 py-2 px-24 text-xl tracking-widest text-white rounded-md uppercase flex items-center justify-center font-rubik border-2 w-[308px] h-[48px]">
             Login
           </a>
-        </button>
       </nav>
     </header>
 
@@ -153,7 +149,7 @@
             </div>
           </div>
 
-          <div class="absolute  sm:w-[520px] sm:h-[352px] sm:top-[30%] sm:left-[65.8%] w-[304px] h-[203px] top-[8%] xs:left-[20.8%]  xxs:left-[12.3%] xxxs:left-[4%] z-0 overflow-hidden">
+          <div class="absolute sm:w-[520px] sm:h-[352px] sm:top-[30%] sm:left-[65.8%] w-[304px] h-[203px] top-[8%] xs:left-[20.8%]  xxs:left-[12.3%] xxxs:left-[4%] z-0 overflow-hidden">
             <span class="bg-blue-600 rounded-[316px] left-[25%] xs:left-0 xxs:left-[10%] xxxs:left-[20%] sm:w-[1000px] w-[577px] h-full absolute"></span>
           </div>
         </section>
@@ -416,7 +412,7 @@
   
     
     
-    <div class="bg-blue-600 w-full h-[360px] py-12 flex flex-col items-center text-center mt-40">
+    <section class="bg-blue-600 w-full h-[360px] py-12 flex flex-col items-center text-center mt-40">
       <div class="text-white w-[311px] h-[240px] sm:w-[442px] sm:h-[228px] flex flex-col items-center sm:justify-center gap-4 sm:gap-8">
         <p class="text-xs leading-10 sm:text-sm font-medium tracking-spacingCustom sm:tracking-wideest">35,000+ ALREADY JOINED</p>
         <h3 class="sm:text-custom32 text-2xl tracking-tighterCustom font-medium sm:w-[408px] sm:h-[80px]">Stay up-to-date with what we're doing</h3>
@@ -440,7 +436,7 @@
         </form>
   
       </div>
-    </div>
+    </section>
 
     <footer class="w-full sm:h-[88px] h-[334px] bg-gray-800 text-white flex items-center justify-center p-8">
       <div class="container sm:w-full sm:h-full w-[148px] h-[251px] flex items-center sm:flex-row flex-col sm:pl-24 sm:pr-16">
