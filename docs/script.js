@@ -111,23 +111,32 @@ const socialNetworks = document.querySelector('.social');
 
 
 iconHamburger.addEventListener('click', () => {
-    navbar.classList.toggle('hidden');
-    overlay.classList.toggle('hidden');
-    logo.classList.toggle('hidden');
-    iconClose.classList.toggle('hidden');
-    socialNetworks.classList.toggle('flex');
-    socialNetworks.classList.remove('hidden');
+    navbar.classList.remove('opacity-0', 'invisible', 'translate-y-[-20px]');
+    navbar.classList.add('opacity-100', 'visible', 'translate-y-0');
+
+    overlay.classList.remove('opacity-0', 'invisible');
+    overlay.classList.add('opacity-95', 'visible');
+
+    iconClose.classList.remove('opacity-0', 'invisible');
+    iconClose.classList.add('opacity-100', 'visible');
+
+    socialNetworks.classList.remove('opacity-0', 'invisible', 'translate-y-[-20px]');
+    socialNetworks.classList.add('opacity-100', 'visible', 'translate-y-0');
 });
 
 iconClose.addEventListener('click', () => {
-    navbar.classList.toggle('hidden');
-    overlay.classList.toggle('hidden');
-    logo.classList.toggle('hidden');
-    iconClose.classList.toggle('hidden');
-    socialNetworks.classList.toggle('hidden');
-    socialNetworks.classList.remove('flex');
-})
+    navbar.classList.remove('opacity-100', 'visible', 'translate-y-0');
+    navbar.classList.add('opacity-0', 'invisible', 'translate-y-[-20px]');
 
+    overlay.classList.remove('opacity-95', 'visible');
+    overlay.classList.add('opacity-0', 'invisible');
+
+    iconClose.classList.remove('opacity-100', 'visible');
+    iconClose.classList.add('opacity-0', 'invisible');
+
+    socialNetworks.classList.remove('opacity-100', 'visible', 'translate-y-0');
+    socialNetworks.classList.add('opacity-0', 'invisible', 'translate-y-[-20px]');
+});
 
 
 
