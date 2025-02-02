@@ -98,7 +98,7 @@
     "yaml": "^2.6.1"
   },
   "scripts": {
-    "build": "tailwindcss -i ./src/style.css -o ./docs/style.css"
+    "build": "tailwindcss -i ./src/style.css -o ./docs/style.css --watch"
   },
   "keywords": [],
   "author": "",

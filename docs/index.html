@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
+  <script defer src="script.js"></script>
 
   <title>Frontend Mentor | Bookmark landing page</title>
 </head>
@@ -71,13 +72,12 @@
         7.541v.15h-3.08l-3.996-5.694-1.512 1.773v3.92h-2.52V6z" fill="#FFFFFF" fill-rule="nonzero"/><g><circle fill="#FFFFFF" cx="12.5" cy="12.5" r="12.5"/>
           <path d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z" fill="#242A45"/></g></g></svg>
 
-      <img src="./images/icon-close.svg" 
-          alt="Icon Close" 
-          class="close sm:hidden hidden absolute top-9 xxxs:left-[93%] xxs:left-[87%] xs:left-[82.5%] z-50
-          opacity-0 invisible transition-opacity duration-300 ease-in-out">    
 
-      <nav class="navbar container sm:hidden hidden flex-col absolute top-[100px] left-auto w-[309px] h-[271px] mx-auto z-50 tracking-widest
-                  opacity-0 invisible translate-y-[-20px] transition-all duration-300 ease-in-out">
+    <img src="./images/icon-close.svg" 
+         alt="Icon Close" 
+         class="close sm:hidden hidden absolute top-9 xxxs:left-[93%] xxs:left-[87%] xs:left-[82.5%] z-50">    
+
+      <nav class="navbar container sm:hidden hidden flex-col absolute top-[100px] left-auto w-[309px] h-[271px] mx-auto z-50 tracking-widest">
         <ul class="flex flex-col items-center gap-1.15 uppercase text-xl text-white">
           <div class="w-[309px] h-[1px] bg-white bg-opacity-15"></div>
           <li>
@@ -107,13 +107,12 @@
       </nav>
     </header>
 
-     <div class="social sm:hidden hidden absolute top-[92%] flex-row items-center gap-10 z-50
-                 opacity-0 invisible translate-y-[-20px] transition-all duration-300 ease-in-out">
+     <div class="social sm:hidden hidden absolute top-[92%] flex-row items-center gap-10 z-50">
       <img src="./images/icon-facebook.svg" alt="Facebook">
       <img src="./images/icon-twitter.svg" alt="Twitter">
      </div>
 
-    <div class="overlay w-full h-full bg-gray-900 hidden fixed top-0 left-0 z-20 opacity-0 invisible transition-all duration-300 ease-in-out"></div>
+    <div class="overlay w-full h-full bg-gray-900 opacity-95 hidden fixed top-0 left-0 z-20"></div>
   
   
     
@@ -512,7 +511,7 @@
           </div>
          </footer>
   </body>
-  <script src="script.js"></script>
+  
   </html>
   
   
